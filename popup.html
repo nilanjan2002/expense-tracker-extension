@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <script src="jquery.min.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            border-radius:20px ;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .main {
+            width: 200px;
+            height: auto;
+            /* margin: 0 auto; */
+            padding: 0;
+        }
+      .budget {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h3[main_heading]{
+        padding: 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h3 main_heading class="bg-dark text-white text-center mb-3">Expense Tracker</h3>
+      <div class="text-center px2">
+        <h5 data-limit>Limit: <span data-limit-amount class="badge badge-danger">0$</span></h5>
+      </div>
+      <div class="text-center mb-4">
+        <button id="btn" class="btn btn-primary">Spend</button>
+      </div>
+      <div class="budget">
+        <h3 class="badge badge-secondary p-2">0$</h3>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

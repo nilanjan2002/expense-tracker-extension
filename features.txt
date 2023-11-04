@@ -1,0 +1,4 @@
+- Accept spending from text-selection
+- Add to total spending
+- Alert user when limit is crossed
+- Reset total spendings and spend-limit
