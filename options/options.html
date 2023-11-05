@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../packages/bootstrap.min.css" rel="stylesheet" />
+    <script src="../packages/jquery.min.js"></script>
+    <style>
+        body{
+            border-radius: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container text-center p-4">
+      <h1 class="p-3">Config Page</h1>
+      <div class="form">
+        <div class="input-group mb-3">
+          <input
+          data-limit-value
+            type="text"
+            class="form-control input-group-text mr-3"
+            placeholder="Limit"
+            value="10"
+          />
+          <button data-limit-set class="btn btn-danger" type="submit">Set Limit</button>
+        </div>
+      </div>
+      <div class="input-group mb-3 p-2">
+        <button limit-reset-btn class="btn btn-dark mr-4" type="submit">Reset Limit</button>
+        <button spend-reset-btn class="btn btn-dark ml-4" type="submit">
+          Reset Money Spent
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="options.js"></script>
+</html>

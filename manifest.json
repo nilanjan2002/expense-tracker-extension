@@ -17,6 +17,9 @@
             "48": "images/icon-48.png"
         }
     },
+    "options_ui": {
+        "page": "options/options.html"
+      },
     "content_scripts": [
         {
             "matches": [

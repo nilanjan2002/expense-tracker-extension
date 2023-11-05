@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expense Tracker</title>
-    <script src="jquery.min.js"></script>
-    <link href="bootstrap.min.css" rel="stylesheet" />
+    <script src="packages/jquery.min.js"></script>
+    <link href="packages/bootstrap.min.css" rel="stylesheet" />
     <style>
         body{
             margin: 0;
@@ -34,16 +34,16 @@
         margin-bottom: 20px;
       }
 
-      h3[main_heading]{
+      h4[main_heading]{
         padding: 10px 10px;
       }
     </style>
   </head>
   <body>
     <div class="main">
-      <h3 main_heading class="bg-dark text-white text-center mb-3">Expense Tracker</h3>
+      <h4 main_heading class="bg-dark text-white text-center py-2 mb-3">Expense Tracker</h4>
       <div class="text-center px2">
-        <h5 data-limit>Limit: <span data-limit-amount class="badge badge-danger">0$</span></h5>
+        <h4 data-limit>Limit: <span data-limit-amount class="badge badge-danger">0$</span></h4>
       </div>
       <div class="text-center mb-4">
         <button id="btn" class="btn btn-primary">Spend</button>
